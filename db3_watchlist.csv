@@ -1,0 +1,64 @@
+Entity_Type,Entity_Value,Risk_Level,Reason
+IP,185.15.55.2,Critical,Known Fraud - Linked to ransomware C2 server
+IP,41.58.100.99,Critical,AML - Associated with money laundering network
+IP,175.45.176.5,Critical,Sanctions - North Korean state-sponsored IP
+IP,5.160.0.44,High,Sanctions - Iranian regime-linked infrastructure
+IP,178.172.0.12,High,AML - Belarusian mule network node
+IP,91.108.56.100,High,Known Fraud - Phishing campaign origin
+IP,194.165.16.77,High,Known Fraud - Carding forum server
+IP,45.142.212.100,Critical,Known Fraud - Botnet command node
+IP,77.83.247.55,Critical,AML - Crypto mixing service exit node
+IP,193.32.162.30,High,Known Fraud - SIM swap fraud infrastructure
+IP,109.234.39.14,High,Known Fraud - Account takeover campaign
+IP,185.220.101.45,Critical,Known Fraud - Tor exit node used in fraud
+IP,62.182.85.234,High,AML - Hawala network relay point
+IP,46.161.27.100,High,Known Fraud - Credential stuffing origin
+IP,91.219.236.20,Critical,Sanctions - Linked to sanctioned entity infrastructure
+IP,185.100.87.202,High,Known Fraud - Dark web marketplace server
+IP,37.235.53.210,High,AML - Shell company payment processor
+IP,195.54.160.149,Critical,Known Fraud - Ransomware payment collection node
+IP,80.82.77.33,High,Known Fraud - Repeated card-not-present fraud
+IP,5.188.206.14,Critical,AML - Identified in FINCEN SAR filing
+Account,ACC-666000,Critical,Sanctions - OFAC designated terrorist financing account
+Account,ACC-TERROR1,Critical,Sanctions - UN Security Council listed entity
+Account,ACC-MULE001,Critical,AML - Confirmed money mule account
+Account,ACC-SANC002,Critical,Sanctions - SDN list match
+Account,ACC-FRAUD99,High,Known Fraud - Repeated chargeback fraud
+Account,ACC-999001,High,AML - Structuring pattern detected
+Account,ACC-999002,High,Known Fraud - Synthetic identity fraud
+Account,ACC-MULE002,Critical,AML - Mule account in layering scheme
+Account,ACC-MULE003,Critical,AML - Mule account linked to drug trafficking proceeds
+Account,ACC-SHELL01,Critical,AML - Shell company with no legitimate business activity
+Account,ACC-SHELL02,High,"AML - Offshore shell account, beneficial owner unknown"
+Account,ACC-SANC003,Critical,Sanctions - EU asset freeze order
+Account,ACC-SANC004,Critical,"Sanctions - OFAC SDN list, weapons proliferation"
+Account,ACC-FRAUD01,High,Known Fraud - Romance scam collection account
+Account,ACC-FRAUD02,High,Known Fraud - Business email compromise recipient
+Account,ACC-FRAUD03,High,Known Fraud - Investment scam proceeds account
+Account,ACC-FRAUD04,Critical,Known Fraud - Confirmed ransomware payment wallet
+Account,ACC-CRYPTO1,High,AML - Unregistered crypto exchange account
+Account,ACC-CRYPTO2,Critical,Sanctions - Crypto account linked to OFAC-designated exchange
+Account,ACC-PEP0001,High,"AML - Politically Exposed Person (PEP), enhanced due diligence required"
+Account,ACC-PEP0002,High,"AML - PEP family member, suspicious transaction patterns"
+Account,ACC-HAWK001,High,AML - Flagged in hawala network investigation
+Account,ACC-HAWK002,Critical,AML - Primary hawala broker account
+Country,Russia,Critical,Sanctions - OFAC/EU comprehensive sanctions
+Country,North Korea,Critical,Sanctions - UN/OFAC total embargo
+Country,Iran,Critical,Sanctions - OFAC comprehensive sanctions
+Country,Belarus,High,Sanctions - EU/US sectoral sanctions
+Country,Nigeria,High,AML - FATF high-risk jurisdiction
+Country,Myanmar,High,Sanctions - US/EU targeted sanctions
+Country,Syria,Critical,Sanctions - OFAC/EU comprehensive sanctions
+Country,Cuba,Critical,Sanctions - OFAC embargo
+Country,Venezuela,High,"Sanctions - OFAC sectoral sanctions, corruption risk"
+Country,Sudan,Critical,"Sanctions - OFAC designated, conflict financing"
+Country,Somalia,High,"AML - FATF high-risk, terrorist financing concern"
+Country,Yemen,High,"Sanctions - UN arms embargo, AML risk"
+Country,Libya,High,"Sanctions - UN asset freeze, conflict zone"
+Country,Zimbabwe,High,Sanctions - OFAC targeted sanctions
+Country,Haiti,High,"AML - FATF increased monitoring, gang financing risk"
+Country,Pakistan,High,"AML - FATF grey list, terror financing risk"
+Country,Afghanistan,Critical,"Sanctions - Taliban-controlled, OFAC designated"
+Country,Iraq,High,"AML - High corruption index, sanctions exposure"
+Country,Mali,High,"AML - FATF grey list, terrorist financing"
+Country,Burkina Faso,High,"AML - FATF grey list, armed group financing"
