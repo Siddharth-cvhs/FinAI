@@ -3,27 +3,7 @@
 ## Overview
 FinAI ingests live transactions from Postgres, scores them with a hybrid Isolation‑Forest + rule engine, runs three parallel LLM agents (Historian, Network, Compliance) and synthesizes a recommended action (Block / Escalate / Clear). Human reviewers finalize the decision; all outcomes are logged for audit.
 
-## Architecture (mermaid)
-```mermaid
-flowchart TD
-    A[Live Monitoring] --> B[Investigation]
-    B --> C{Agentic Workflow}
-    C --> H[Historian Agent]
-    C --> N[Network Agent]
-    C --> P[Compliance Agent]
-    H --> S[Summary Agent]
-    N --> S
-    P --> S
-    S --> R[Final Recommendation]
-    C -->|Non‑agentic Scoring| E[Risk / Evaluation Metrics]
-    E --> R
-    R --> D[Decision (Human in the loop)]
-    D --> L[(Monitored Logs)]
-    L -->|Fetch| B
-    B -->|Add| DB[(Postgres DB)]
-    L -->|Delete| DB
-    DB --> B
-```
+
 
 ## Key Components
 - **Backend:** FastAPI, LangGraph/LangChain (Gemini 2.5 Flash), Pandas, psycopg2, IsolationForest bundle (`if_model.joblib`), heuristic rules.
